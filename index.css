@@ -1,15 +1,10 @@
 body {
   background-color: black;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
 }
-div {
+.newsDiv {
   border: 1px gray solid;
-  height: auto;
-  width: 50vw;
+  width: 49%;
+  text-align: center;
   background-color: #393e46;
   color: white;
   margin: 5px;
@@ -17,9 +12,13 @@ div {
   overflow: auto;
   transition: 500ms;
 }
+.newsDiv:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
 a {
   text-decoration: underline;
-  color: #1b262c;
+  color: wheat;
   transition: 500ms;
 }
 
@@ -27,10 +26,7 @@ span {
   display: block;
   margin-top: 10px;
 }
-div:hover {
-  scale: 1.1;
-  transition: 1s;
-}
+
 a:hover {
   color: wheat;
 
@@ -39,16 +35,24 @@ a:hover {
 #rundown {
   color: wheat;
   letter-spacing: 2px;
+  text-align: center;
 }
 #box {
-  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  /* border: 0;
   background-color: black;
   display: flex;
+  flex-direction: row;
+
   justify-content: center;
   align-items: center;
 
-  scale: 1;
+  scale: 1; */
 }
+
 button {
   height: 3vh;
   margin: 1px;
