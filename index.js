@@ -24,16 +24,8 @@ fetch(
       const span = document.createElement("span");
       span.textContent = `Published: ${article.publishedAt}`;
       div.appendChild(span);
+      div.setAttribute("class", "newsDiv");
 
-      document.body.appendChild(div);
+      document.getElementById("box").appendChild(div);
     });
   });
-
-// dont forget to add the author and  name of the pubsler ex. yahoo
-
-// const lightModeBtn = document.querySelector("#changeModes");
-// const body = document.body;
-
-// lightModeBtn.addEventListener("click", () => {
-//   body.classList.toggle("light-mode");
-// });
