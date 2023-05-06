@@ -82,3 +82,8 @@ button {
   background-color: #fff;
   color: #333;
 }
+@media (max-width: 400px) {
+  .newsDiv {
+    width: 100%;
+  }
+}
